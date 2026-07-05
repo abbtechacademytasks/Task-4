@@ -1,8 +1,14 @@
 public class Task3 {
     public static void main(String[] args) {
-        String[] words = {"telefon", "televizor", "teleskop"};
+        String[] firstWords = {"telefon", "televizor", "teleskop"};
+        showResult(firstWords);
 
-        System.out.println(checkPrefix(words));
+        String[] secondWords = {"it", "pişik"};
+        showResult(secondWords);
+    }
+
+    public static void showResult(String[] words) {
+        System.out.println("\"" + checkPrefix(words) + "\"");
     }
 
     public static String checkPrefix(String[] words) {
